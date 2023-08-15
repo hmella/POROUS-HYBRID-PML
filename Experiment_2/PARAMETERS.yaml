@@ -1,0 +1,33 @@
+
+# PML
+- Lx: 300.0
+  Ly: 150.0
+  LPML: 14.0
+  meshtype: 'GEO_2_HYBRID'
+
+# Paraxial
+- Lx: 300.0
+  Ly: 150.0
+  meshtype: 'GEO_2_PARAXIAL'
+
+# Extended
+- Lx: 300.0
+  Ly: 150.0
+  R_ext: 909.0
+  R_int: 600.0
+  meshtype: 'GEO_2_EXTENDED'
+
+# Common
+- source_center:   [-75.0,0.0]  # Load source_center
+  source_amplitude: 10000
+  fr:        15.0
+  b:         0.3
+  cl_source: 0.15
+  cl_base  : 1.4
+  cl_coarse: 1.4
+  cl_PML   : 1.4
+  s1       : [150.0, 0.0]    # Geophone 1
+  s2       : [150.0, -10.0]  # Geophone 2
+  s3       : [150.0, -50.0]  # Geophone 3
+  s4       : [150.0, -100.0] # Geophone 4
+  s5       : [150.0, -150.0] # Geophone 5  
