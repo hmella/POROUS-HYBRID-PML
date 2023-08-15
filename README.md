@@ -1,4 +1,6 @@
 # Hybrid PML formulation for poroelastodynamics
+![alt text](media/Experiment_1_HybridPML.gif)
+
 This repository contains all the source codes to run wave propagation experiments in poroelastic media using Perfectly Matched Layers (PML) as absorbing boundary conditions. The implementation of the PML method was done in a "hybrid" way, meaning that we are solving two PDEs (poroelasticity + poroelasticity-with-PML) in two disjoint regions coupled with Lagrange multipliers.
 
 The resulting strong problem was solved using the finite elements method through the libraries [FEniCS](https://fenicsproject.org/) and [multiphenics](https://github.com/multiphenics/multiphenics). The finite elements meshes were generated using [gmsh](https://www.gmsh.info/) and [meshio](https://github.com/nschloe/meshio).
@@ -88,4 +90,4 @@ or
 
     mpirun -n nr_processess python3 foo.py    
 
-to go in parallel.
+to run in parallel.
