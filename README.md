@@ -1,5 +1,5 @@
 # Hybrid PML formulation for poroelastodynamics
-<img width="327" height="389" src="media/Experiment_2_HybridPML.gif" alt="color picker" /> <img width="327" height="389" src="media/Experiment_3_HybridPML.gif" alt="color picker" /> <img width="327" height="389" src="media/Experiment_4_HybridPML.gif" alt="color picker" />
+<img width="327" height="389" src="media/Experiment_3_HybridPML.gif" alt="color picker" /> <img width="327" height="389" src="media/Experiment_4_HybridPML.gif" alt="color picker" />
 
 This repository contains all the source codes to run wave propagation experiments in poroelastic media using Perfectly Matched Layers (PML) as absorbing boundary conditions. The implementation of the PML method was done in a "hybrid" way, meaning that we are solving two PDEs (poroelasticity + poroelasticity-with-PML) in two disjoint regions coupled with Lagrange multipliers.
 
