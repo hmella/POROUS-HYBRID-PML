@@ -105,4 +105,4 @@ if __name__=="__main__":
                           PMLFunctions=PML)
 
   # Solve the problem
-  #problem.solve()
+  problem.solve()

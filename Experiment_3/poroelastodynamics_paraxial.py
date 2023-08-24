@@ -79,4 +79,4 @@ if __name__=="__main__":
                           boundaries=ff)
 
   # Solve the problem
-  #problem.solve()
+  problem.solve()

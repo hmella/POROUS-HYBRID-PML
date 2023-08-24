@@ -80,4 +80,4 @@ if __name__=="__main__":
                           wD=[[wD, 1],])
 
   # Solve the problem
-  #problem.solve()
+  problem.solve()

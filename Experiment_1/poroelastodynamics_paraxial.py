@@ -77,4 +77,4 @@ if __name__=="__main__":
                           solver_type='direct')
 
   # Solve the problem
-  #problem.solve()
+  problem.solve()
