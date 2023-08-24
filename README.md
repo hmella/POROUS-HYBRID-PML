@@ -45,8 +45,8 @@ command:
 FEniCS currently offer several end-user images. A full description of
 the images can be found at https://fenics-containers.readthedocs.org/.
 
-## multiphenics installation
-Inside the docker container, run the following lines to install multiphenics:
+## Multiphenics installation
+Inside the docker container, run the following lines to install [multiphenics](https://github.com/multiphenics/multiphenics):
 
     git clone git@github.com:multiphenics/multiphenics.git &&
     cd multiphenics-master/ &&
