@@ -1,5 +1,5 @@
 # Hybrid PML formulation for poroelastodynamics
-<img width="327" height="389" src="media/Experiment_3_HybridPML.gif" alt="color picker" /> <img width="327" height="389" src="media/Experiment_4_HybridPML.gif" alt="color picker" />
+<img width="327" height="389" src="videos/Experiment_3_HybridPML.gif" alt="color picker" /> <img width="327" height="389" src="videos/Experiment_4_HybridPML.gif" alt="color picker" />
 
 This repository contains all the source codes to run wave propagation experiments in poroelastic media using Perfectly Matched Layers (PML) as absorbing boundary conditions. The implementation of the PML method was done in a "hybrid" way, meaning that we are solving two PDEs (poroelasticity + poroelasticity-with-PML) in two disjoint regions coupled with Lagrange multipliers.
 
@@ -7,8 +7,7 @@ The resulting strong problem was solved using the finite elements method through
 
 For more details about the PML formulation, please refer to:
 
-- [1]: Mella H., Sáez E., and Mura J. 2023. A hybrid PML formulation for the 2D three-field dynamic Biot's equations
-Reference. Comput. Meth. Appl. Mech. Eng. VolXX, XX–XX. [https://doi.org/10.1016/j.cma.2010.07.013](https://doi.org/10.1016/j.cma.2010.07.013).
+Mella H., Sáez E., and Mura J. 2023. A hybrid PML formulation for the 2D three-field dynamic Biot's equations. Comput. Meth. Appl. Mech. Eng. In Press. [https://doi.org/10.1016/j.cma.2023.116386](https://doi.org/10.1016/j.cma.2023.116386).
 
 
 ## FEniCS installation
@@ -84,10 +83,12 @@ The meshes are stored in ```mesh/```. Before running the simulations, mesh restr
 ### Running the simulation
 To run the examples just download/clone the source code and share the folder into the fenics container using the last command above. Once there just run
     
-    python3 foo.py    
+    python3 poroelastodynamics_foo.py    
 
 or
 
     mpirun -n nr_processess python3 foo.py    
 
-to run in parallel.
+to run in parallel. By default, results are stored in the ```output/``` folder in HDF5 format (suitable for postprocessing) and XDMF (suitable for visualization). If runtime visualization is needed, the option ```PVD=True``` (the default value is ```False```) can be chosen when defining any of the ```FooProblem``` objects (just for this format, 1 frame every 20 timesteps is stored. This can be changed using the ```save_every_n``` option).
+
+Executing the script ```energy_foo.py```, the poroelastic energy inside the regular domain and the traces at the locations defined in ```PARAMETERS.yaml``` can be obtained. To obtain the same figures of the article, you have to run the ```plot_energies.m``` and ```plot_seismograms.m``` Matlab scripts.
