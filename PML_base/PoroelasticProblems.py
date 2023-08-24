@@ -1,10 +1,8 @@
 # Copyright (C) 2019 Hernan Mella
 
 from fenics import *
-
 from multiphenics import *
-from PML_base.ConstitutiveRelations import (ElasticCompliance, ElasticStress,
-                                            PoroelasticCompliance,
+from PML_base.ConstitutiveRelations import (PoroelasticCompliance,
                                             PoroelasticStress)
 from PML_base.Newmark import Newmark, NewmarkHybrid, update
 
