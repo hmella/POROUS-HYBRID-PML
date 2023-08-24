@@ -7,8 +7,9 @@ The resulting strong problem was solved using the finite elements method through
 
 For more details about the PML formulation, please refer to:
 
-Mella H., Sáez E., and Mura J. 2023. A hybrid PML formulation for the 2D three-field dynamic Biot's equations. Comput. Meth. Appl. Mech. Eng. In Press. [https://doi.org/10.1016/j.cma.2023.116386](https://doi.org/10.1016/j.cma.2023.116386).
-
+<ul>
+  Mella H., Sáez E., and Mura J. 2023. A hybrid PML formulation for the 2D three-field dynamic Biot's equations. Comput. Meth. Appl. Mech. Eng. In Press. DOI: <a href="https://doi.org/10.1016/j.cma.2023.116386">10.1016/j.cma.2023.116386</a>.
+</ul>
 
 ## FEniCS installation
 The easiest way of running FEniCS on any OS is to use [Docker Desktop](https://hub.docker.com/?overlay=onboarding) (the following instructions were taken from docker part of the [fenicsproject page](https://bitbucket.org/fenics-project/docker/src/master/)). To install Docker for your platform (Windows, macOS, Linux, cloud platforms, etc.), follow the instructions at [docker.com](https://docs.docker.com/engine/getstarted/step_one/).
