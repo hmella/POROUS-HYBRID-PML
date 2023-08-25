@@ -83,3 +83,10 @@ or
 to run in parallel. By default, results are stored in the ```output/``` folder in HDF5 format (suitable for postprocessing) and XDMF (suitable for visualization). If runtime visualization is needed, the option ```PVD=True``` (the default value is ```False```) can be chosen when defining any of the ```FooProblem``` objects (just for this format, 1 frame every 20 timesteps is stored. This can be changed using the ```save_every_n``` option).
 
 Executing the script ```energy_foo.py```, the poroelastic energy inside the regular domain and the traces at the locations defined in ```PARAMETERS.yaml``` can be obtained (this script only runs in serial). To obtain the same figures of the article, you have to run the ```plot_energies.m``` and ```plot_seismograms.m``` Matlab scripts.
+
+## Citing/attribution
+If you have used the provided codes for your research, or it has influenced your work, we ask that you include the following citation:
+
+<ul>
+  Mella H., Sáez E., and Mura J. 2023. A hybrid PML formulation for the 2D three-field dynamic Biot's equations. Comput. Meth. Appl. Mech. Eng. In Press. DOI: <a href="https://doi.org/10.1016/j.cma.2023.116386">10.1016/j.cma.2023.116386</a>.
+</ul>
